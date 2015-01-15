@@ -10,4 +10,5 @@ class Project
   field :planned_duration, type: Integer
   field :budget, type: Money
   field :state, type: String
+  embeds_many :repositories
 end
