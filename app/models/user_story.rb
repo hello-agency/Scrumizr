@@ -12,7 +12,6 @@ class UserStory
   embeds_many :definition_of_done
 
   track_history   on: :all,
-                  modifier_field: :member,
                   version_field: :version,
                   track_create: true,
                   track_update: true,
