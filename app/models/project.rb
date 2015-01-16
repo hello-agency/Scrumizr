@@ -2,6 +2,7 @@ class Project
   include Mongoid::Document
   include Mongoid::Timestamps
   include Mongoid::Enum
+  include Mongoid::History::Trackable
   
   field :name, type: String
   field :description, type: String
@@ -14,4 +15,11 @@ class Project
   embeds_many :repositories
 
   enum :state, [:open, :closed, :archived]
+
+  track_history   :on => [:all],
+                  :modifier_field => :member,
+                  :version_field => :version,
+                  :track_create   =>  true,
+                  :track_update   =>  true,
+                  :track_destroy  =>  true
 end
