@@ -3,6 +3,7 @@ class Repository
   
   field :name, type: String
   field :link, type: String
-  field :type, type: String
   embedded_in :project
+
+  enum :type, [:git, :svn, :mercurial]
 end
