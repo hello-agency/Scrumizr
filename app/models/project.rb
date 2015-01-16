@@ -1,5 +1,6 @@
 class Project
   include Mongoid::Document
+  include Mongoid::Enum
   
   field :name, type: String
   field :description, type: String
@@ -9,6 +10,7 @@ class Project
   field :deadline, type: Date
   field :planned_duration, type: Integer
   field :budget, type: Money
-  field :state, type: String
   embeds_many :repositories
+
+  enum :state, [:open, :closed, :archived]
 end
