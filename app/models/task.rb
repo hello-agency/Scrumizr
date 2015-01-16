@@ -8,10 +8,11 @@ class Task
 
   enum :state, [:todo, :doing, :done]
 
-  track_history   :on => [:all],
-                  :modifier_field => :member,
-                  :version_field => :version,
-                  :track_create   =>  true,
-                  :track_update   =>  true,
-                  :track_destroy  =>  true
+  track_history   on: [:all],
+                  modifier_field: :member,
+                  version_field: :version,
+                  track_create: true,
+                  track_update: true,
+                  track_destroy: true,
+                  scope: :user_story
 end
