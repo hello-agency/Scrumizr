@@ -46,3 +46,4 @@ gem "slim-rails"
 # MongoDB
 gem "mongoid"
 gem "mongoid-enum"
+gem "mongoid-history"
