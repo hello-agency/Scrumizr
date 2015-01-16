@@ -1,5 +1,6 @@
 class ProjectMember
   include Mongoid::Document
+  include Mongoid::Enum
 
   balongs_to :member
   belongs_to :project

@@ -1,5 +1,6 @@
 class UserStory
   include Mongoid::Document
+  include Mongoid::History::Trackable
   
   field :name, type: String
   field :estimate, type: Integer
@@ -10,7 +11,7 @@ class UserStory
   embeds_many :acceptance_criteria
   embeds_many :definition_of_done
 
-  track_history   on: [:all],
+  track_history   on: :all,
                   modifier_field: :member,
                   version_field: :version,
                   track_create: true,

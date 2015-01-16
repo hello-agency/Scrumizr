@@ -1,5 +1,6 @@
 class Repository
   include Mongoid::Document
+  include Mongoid::Enum
   
   field :name, type: String
   field :link, type: String

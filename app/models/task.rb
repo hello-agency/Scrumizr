@@ -1,5 +1,7 @@
 class Task
   include Mongoid::Document
+  include Mongoid::Enum
+  include Mongoid::History::Trackable
   
   field :name, type: String
   field :description, type: String
@@ -8,7 +10,7 @@ class Task
 
   enum :state, [:todo, :doing, :done]
 
-  track_history   on: [:all],
+  track_history   on: :all,
                   modifier_field: :member,
                   version_field: :version,
                   track_create: true,

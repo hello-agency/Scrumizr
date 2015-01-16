@@ -1,5 +1,6 @@
 class Member
   include Mongoid::Document
+  include Mongoid::Enum
   
   field :fullname, type: String
   field :mail, type: String
