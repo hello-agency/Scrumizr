@@ -13,5 +13,6 @@ Rails.application.routes.draw do
     get '/', to: 'members#index', as: 'members'
     get '/:id', to: 'members#show', as: 'members_show'
     delete '/:id', to: 'members#delete'
+    get '/:member_id/projects', to: 'project_members#member_projects', as: 'member_projects'
   end
 end
