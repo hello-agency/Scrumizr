@@ -42,3 +42,8 @@ gem 'spring',        group: :development
 gem "rspec-rails"
 gem "slim"
 gem "slim-rails"
+
+# MongoDB
+gem "mongoid"
+gem "mongoid-enum"
+gem "mongoid-history"
