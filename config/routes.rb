@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     post '/', to: 'projects#create'
     patch '/:id', to: 'projects#update'
     delete '/:id', to: 'projects#destroy'
+    get '/:project_id/members', to: 'project_members#project_members', as: 'project_members'
   end
 
   scope '/members' do
