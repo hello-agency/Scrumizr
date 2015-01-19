@@ -9,5 +9,5 @@ class Member
   has_many :member_tasks
 
   enum :access, [:user, :admin, :client]
-  enum :account_status, [:open, :closed, :pending]
+  enum :account_status, [:pending, :open, :closed]
 end
