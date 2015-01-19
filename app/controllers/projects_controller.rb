@@ -38,7 +38,8 @@ class ProjectsController < ApplicationController
     if @project.save 
       render json: {status: true, message: 'Project has been successfully destroyed'}
     else
-      render json: {status: true, message: 'Project couldn\'t be deleted, try again later'}  
+      render json: {status: true, message: 'Project couldn\'t be deleted, try again later'}
+    end
   end
   
   private
