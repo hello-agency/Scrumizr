@@ -12,6 +12,7 @@ class Project
   field :deadline, type: Date
   field :planned_duration, type: Integer
   field :budget, type: Money
+  has_many :project_members
   embeds_many :repositories
 
   enum :state, [:open, :closed, :archived]
