@@ -12,6 +12,16 @@ class ProjectMembersController < ApplicationController
     end
   end
   
+  # GET /members/:member_id/projects
+  def member_projects
+    if @member
+      @member_projects = @member.project_members.map { |pm| {role: pm.role, project: pm.project} }
+      render json: @member_projects
+    else
+      render json: []
+    end
+  end
+
   private 
     
     def set_member
