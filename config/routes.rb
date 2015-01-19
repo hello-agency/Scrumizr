@@ -7,4 +7,10 @@ Rails.application.routes.draw do
     patch '/:id', to: 'projects#update'
     delete '/:id', to: 'projects#destroy'
   end
+
+  scope '/members' do
+    get '/', to: 'members#index', as: 'members'
+    get '/:id', to: 'members#show', as: 'members_show'
+    delete '/:id', to: 'members#delete'
+  end
 end
