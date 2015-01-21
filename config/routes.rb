@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     patch '/:id', to: 'projects#update'
     delete '/:id', to: 'projects#destroy'
     get '/:project_id/members', to: 'project_members#project_members', as: 'project_members'
+    post '/:project_id/members/add', to: 'project_members#create', as: 'project_members_add'
   end
 
   scope '/members' do
