@@ -22,8 +22,23 @@ class ProjectMembersController < ApplicationController
     end
   end
 
-  private 
-    
+  # POST /projects/:project_id/members/add
+  def create
+    @project_member = ProjectMember.create(project_member_params)
+    if @project_member.valid?
+      render json: @project_member
+    else
+      #Return the first validation error message
+      render json: @project_member.errors.to_hash.first[1]
+    end
+  end
+
+  private
+
+    def project_member_params
+      params.require(:project_member).permit(:role, :project_id, :member_id)
+    end
+
     def set_member
       @member = Member.find(params[:member_id])
     end
