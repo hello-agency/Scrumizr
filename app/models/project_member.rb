@@ -21,7 +21,7 @@ class ProjectMember
 
   def member_not_already_in_project
     if !ProjectMember.where(project: project, member: member).empty?
-      errors.add(:member, "#{member.fullname} is already in project \"#{project.name}\")"
+      errors.add(:member, "#{member.fullname} is already in project \"#{project.name}\"")
     end
   end
 end
