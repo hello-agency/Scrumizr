@@ -50,3 +50,4 @@ gem "mongoid-history"
 
 # Front
 gem 'bourbon'
+gem 'angularjs-rails'
