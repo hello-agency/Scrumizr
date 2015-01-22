@@ -1,0 +1,42 @@
+/*
+Error: Invalid US-ASCII character "\xE2"
+        on line 8 of /Users/valentin/Documents/Themes/ionicons-2.0.1/builder/../scss/ionicons.scss
+
+3:   Ionicons, v#{$ionicons-version}
+4:   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
+5:   https://twitter.com/benjsperry  https://twitter.com/ionicframework
+6:   MIT License: https://github.com/driftyco/ionicons
+7: 
+8:   Android-style icons originally built by Google’s
+9:   Material Design Icons: https://github.com/google/material-design-icons
+10:   used under CC BY http://creativecommons.org/licenses/by/4.0/
+11:   Modified icons to fit ionicon’s grid from original.
+12: *\/
+13: 
+
+Backtrace:
+/Users/valentin/Documents/Themes/ionicons-2.0.1/builder/../scss/ionicons.scss:8
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/util.rb:1320:in `block in find_encoding_error'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each_with_index'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/util.rb:1319:in `find_encoding_error'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/util.rb:896:in `check_sass_encoding'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/engine.rb:423:in `check_encoding!'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/engine.rb:379:in `_to_tree'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+/Users/valentin/.rvm/gems/ruby-2.1.4/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+/Users/valentin/.rvm/gems/ruby-2.1.4/bin/sass:23:in `load'
+/Users/valentin/.rvm/gems/ruby-2.1.4/bin/sass:23:in `<main>'
+/Users/valentin/.rvm/gems/ruby-2.1.4/bin/ruby_executable_hooks:15:in `eval'
+/Users/valentin/.rvm/gems/ruby-2.1.4/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid US-ASCII character \"\xE2\"\A         on line 8 of /Users/valentin/Documents/Themes/ionicons-2.0.1/builder/../scss/ionicons.scss\A \A 3:   Ionicons, v#{$ionicons-version}\A 4:   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/\A 5:   https://twitter.com/benjsperry  https://twitter.com/ionicframework\A 6:   MIT License: https://github.com/driftyco/ionicons\A 7: \A 8:   Android-style icons originally built by Google’s\A 9:   Material Design Icons: https://github.com/google/material-design-icons\A 10:   used under CC BY http://creativecommons.org/licenses/by/4.0/\A 11:   Modified icons to fit ionicon’s grid from original.\A 12: */\A 13: "; }
