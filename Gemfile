@@ -47,3 +47,6 @@ gem "slim-rails"
 gem "mongoid"
 gem "mongoid-enum"
 gem "mongoid-history"
+
+# Front
+gem 'bourbon'
