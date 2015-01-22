@@ -33,6 +33,16 @@ class ProjectMembersController < ApplicationController
     end
   end
 
+  # DELETE /projects/:project_id/members/destroy
+  def destroy
+    @project_member = ProjectMember.where(project_id: params[:project_id], member_id: params[:member_id]).first
+    if @project_member
+      render json: @project_member.destroy
+    else
+      render json: []
+    end
+  end
+
   private
 
     def project_member_params
