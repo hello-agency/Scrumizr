@@ -52,3 +52,4 @@ gem "mongoid-history"
 gem 'bourbon'
 gem 'angularjs-rails'
 gem 'angular_rails_csrf'
+gem 'angular-rails-templates'
