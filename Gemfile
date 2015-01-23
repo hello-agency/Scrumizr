@@ -50,6 +50,9 @@ gem "mongoid-history"
 
 # Front
 gem 'bourbon'
+gem 'bitters'
+gem 'neat'
+gem 'refills'
 gem 'angularjs-rails'
 gem 'angular_rails_csrf'
 gem 'angular-rails-templates'

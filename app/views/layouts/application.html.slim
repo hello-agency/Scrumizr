@@ -2,7 +2,7 @@ doctype html
 html
   head
     title Scrumizr
-    = stylesheet_link_tag    'application'
+    = stylesheet_link_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags 
     base href="/"
   body ng-app="Scrumizr"
